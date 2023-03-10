@@ -1,4 +1,4 @@
-import { Snowflake, ThreadAutoArchiveDuration, ThreadChannelTypes } from "fosscord.js";
+import { Snowflake, ThreadAutoArchiveDuration, ThreadChannelTypes } from "fosscord-gopnik";
 import { MessageData } from "./MessageData";
 
 export interface ThreadChannelData {

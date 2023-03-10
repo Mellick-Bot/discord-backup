@@ -1,6 +1,6 @@
 import type { BackupData, BackupInfos, CreateOptions, LoadOptions } from './types/';
-import type { Guild } from 'fosscord.js';
-import { SnowflakeUtil, Intents } from 'fosscord.js';
+import type { Guild } from 'fosscord-gopnik';
+import { SnowflakeUtil, Intents } from 'fosscord-gopnik';
 
 import nodeFetch from 'node-fetch';
 import { sep } from 'path';

@@ -1,4 +1,4 @@
-import { TextBasedChannelTypes, VoiceBasedChannelTypes, ThreadChannelTypes } from 'fosscord.js';
+import { TextBasedChannelTypes, VoiceBasedChannelTypes, ThreadChannelTypes } from 'fosscord-gopnik';
 import { ChannelPermissionsData } from './';
 
 export interface BaseChannelData {

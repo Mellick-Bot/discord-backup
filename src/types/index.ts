@@ -1,4 +1,4 @@
-import type { GuildFeatures } from 'fosscord.js';
+import type { GuildFeatures } from 'fosscord-gopnik';
 
 export * from './AfkData';
 export * from './BackupData';
