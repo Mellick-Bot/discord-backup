@@ -1,4 +1,4 @@
-import { DefaultMessageNotificationLevel, ExplicitContentFilterLevel, Snowflake, VerificationLevel } from 'discord.js';
+import { DefaultMessageNotificationLevel, ExplicitContentFilterLevel, Snowflake, VerificationLevel } from 'fosscord.js';
 import { AfkData, BanData, ChannelsData, EmojiData, RoleData, WidgetData } from './';
 
 export interface BackupData {

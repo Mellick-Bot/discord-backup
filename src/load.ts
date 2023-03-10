@@ -1,5 +1,5 @@
 import type { BackupData, LoadOptions } from './types';
-import type { Emoji, Guild, GuildChannel, Role, VoiceChannel } from 'discord.js';
+import type { Emoji, Guild, GuildChannel, Role, VoiceChannel } from 'fosscord.js';
 import { loadCategory, loadChannel } from './util';
 
 /**
