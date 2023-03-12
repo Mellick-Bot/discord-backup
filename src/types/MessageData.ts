@@ -1,4 +1,4 @@
-import { MessageEmbed, FileOptions } from 'fosscord-gopnik';
+import { MessageEmbed, FileOptions } from 'fosscord.js';
 
 export interface MessageData {
     username: string;

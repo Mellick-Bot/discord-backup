@@ -1,6 +1,6 @@
 import type { BackupData, BackupInfos, CreateOptions, LoadOptions } from './types/';
-import type { Guild } from 'fosscord-gopnik';
-import { SnowflakeUtil, Intents } from 'fosscord-gopnik';
+import type { Guild } from 'fosscord.js';
+import { SnowflakeUtil, Intents } from 'fosscord.js';
 
 import nodeFetch from 'node-fetch';
 import { sep } from 'path';
@@ -76,9 +76,8 @@ export const create = async (
     }
 ) => {
     return new Promise<BackupData>(async (resolve, reject) => {
-
-       const intents = new Intents(guild.client.options.intents);
-       if (!intents.has('GUILDS')) return reject('GUILDS intent is required');
+        const intents = new Intents(guild.client.options.intents);
+        if (!intents.has('GUILDS')) return reject('GUILDS intent is required');
 
         try {
             const backupData: BackupData = {

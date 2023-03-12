@@ -1,4 +1,4 @@
-import { MessageMentionOptions } from "fosscord-gopnik";
+import { MessageMentionOptions } from 'fosscord.js';
 
 export interface LoadOptions {
     clearGuildBeforeRestore: boolean;

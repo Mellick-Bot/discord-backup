@@ -4,7 +4,7 @@
 [![versionBadge](https://img.shields.io/npm/v/discord-backup?style=for-the-badge)](https://npmjs.com/discord-backup)
 [![patreonBadge](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2FAndroz2091%2Fpledges&style=for-the-badge)](https://patreon.com/Androz2091)
 
-**Note**: this module uses recent discordjs features and requires fosscord-gopnik v13.
+**Note**: this module uses recent discordjs features and requires fosscord.js v13.
 
 Discord Backup is a powerful [Node.js](https://nodejs.org) module that allows you to easily manage discord server backups.
 
@@ -162,7 +162,7 @@ backup.load(backupData, guild, {
 
 ```js
 // Load modules
-const Discord = require("fosscord-gopnik"),
+const Discord = require("fosscord.js"),
 backup = require("discord-backup"),
 client = new Discord.Client(),
 settings = {
