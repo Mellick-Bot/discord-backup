@@ -97,13 +97,7 @@ export const loadChannels = (guild: Guild, backupData: BackupData, options: Load
 export const loadAFK = (guild: Guild, backupData: BackupData): Promise<Guild[]> => {
     const afkPromises: Promise<Guild>[] = [];
     if (backupData.afk) {
-        afkPromises.push(
-            guild.setAFKChannel(
-                guild.channels.cache.find(
-                    (ch) => ch.name === backupData.afk.name && ch.type === 'GUILD_VOICE'
-                ) as VoiceChannel
-            )
-        );
+        afkPromises.push(guild.setAFKChannel(guild.channels.cache.find((ch) => ch.name === backupData.afk.name && ch.type === 'GUILD_VOICE') as VoiceChannel));
         afkPromises.push(guild.setAFKTimeout(backupData.afk.timeout));
     }
     return Promise.all(afkPromises);
